@@ -3,6 +3,7 @@ import React from 'react';
 import {
   Avatar,
   Box,
+  Container,
   Typography,
   Stack,
   Paper,
@@ -10,11 +11,18 @@ import {
 
 const experiences = [
     {
-    title: 'Industrial PhD Researcher',
-    company: 'TRATON Autonomous Solutions (Scania)',
-    period: 'Oct 2023 – present',
+    title: 'Industrial PhD Student',
+    company: 'TRATON, Södertälje (SE)',
+    period: 'Jul 2025 – present',
     description: `PhD at KTH in collaboration with TRATON/Scania Autonomous Transportation Solutions. Research on explainable end-to-end map learning for autonomous driving, with WASP affiliation.`,
     logo: '/logos/traton.png',
+  },
+    {
+    title: 'Industrial PhD Student',
+    company: 'Scania Autonomous Solutions, Södertälje (SE)',
+    period: 'Oct 2023 – Jun 2025',
+    description: ``,
+    logo: '/logos/scania.svg',
   },
     {
     title: 'Affiliated PhD Student',
@@ -69,25 +77,55 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <Box id="experience" sx={{ pt: 0, pb: {xs:2, md:2}, mt:0}}>
-      <Typography variant="h4" gutterBottom sx={{ mt:8}}>Experience and Affiliations </Typography>
-      <Stack spacing={3}>
+    <Box id="experience" sx={{ py: { xs: 6, md: 8 },px: {xs:0.75}, bgcolor: "#f5f5f5" }}>
+      <Container maxWidth="lg">
+        {/* HERO ROW */}
+        
+          {/* Profile card — LEFT */}
+          {/* HERO ROW */}
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: { xs: 'column', md: 'row' },
+              gap: { xs: 3, md: 5 },
+              alignItems: 'flex-start',
+            }}
+          >
+            {/* Profile card — LEFT */}
+       
+            <Box sx={{ width: { xs: '100%', md: 220 }, flexShrink: 0 }}>
+      <Typography variant="h4" gutterBottom sx={{pl: {xs:0.25}, mb: {xs:-1}}}>Experiences & Affiliations </Typography></Box>
+      <Box sx={{ flex: 1, minWidth: 0 }}>
+      <Stack spacing={{ xs: 1.5, sm: 2, md: 3 }}>
         {experiences.map((exp, idx) => (
-          <Paper key={idx} elevation={3} sx={{ p: 2 }}>
-            <Box display="flex" gap={2}>
+          <Paper variant='section' key={idx} sx={{ p: {xs:1.5, md:2} , boxShadow:0, variant:"card"}}>
+            <Box display="flex" gap={2} >
               {/* Logo avatar */}
               <Avatar
                 src={exp.logo}
                 alt={exp.company}
-                sx={{ width: 56, height: 56 }}
+                sx={{ width: 56, height: 56,mt:0.3 }}
                 variant="rounded"
               />
               {/* Experience content */}
-              <Box>
-                <Typography variant="h7" fontWeight={"bold"}>{exp.title}</Typography>
-                <Typography variant="subtitle2" color="text.secondary">
-                  {exp.company} &bull; {exp.period}
-                </Typography>
+              <Box sx={{mt:-0.3}}>
+                <Typography
+                                          variant="caption"
+                                          color="text.secondary"
+                                          sx={{
+                                            flex: '0 0 10px',   // set your date column width
+                                            textAlign: 'left',  // looks nice with a timeline
+                                            whiteSpace: 'wrap',
+                                            mt:-0.3,
+                                            lineHeight: 1.4,
+                                          }}
+                                        >
+                                          [{exp.period}]
+                                        </Typography>
+                 <Typography variant="body2" fontWeight={700} lineHeight={1.2}>
+                              {exp.company}
+                            </Typography>
+                <Typography variant="body2"  color="text.secondary" >{exp.title}</Typography>
                 {exp.description && (
                   <Typography variant="body2" mt={1}>
                     {exp.description}
@@ -97,7 +135,7 @@ export default function Experience() {
             </Box>
           </Paper>
         ))}
-      </Stack>
-    </Box>
+      </Stack></Box>
+    </Box></Container></Box>
   );
 }

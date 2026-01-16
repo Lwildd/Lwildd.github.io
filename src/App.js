@@ -15,7 +15,7 @@ function App() {
   
       <CssBaseline />
       <Header />
-      <Container maxWidth="md" sx={{ mt: 10 }}>
+      <Container maxWidth="100vw" disableGutters sx={{ mt: {xs:0, md:5}}}>
         <About />
         <Publications />
         <Education />
