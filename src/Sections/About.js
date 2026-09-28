@@ -254,7 +254,7 @@ export default function About() {
                   </Link>
                 </strong>{' '}
                 led by <strong>Prof. Marco Pavone</strong> at <strong>Stanford University</strong> as a visiting
-                PhD student. In January 2025, I joined the <strong><Link href="https://wasp-sweden.org/" target="_blank" rel="noopener noreferrer">Wallenberg AI, Autonomous Systems and Software Program (WASP)</Link></strong>  as an affiliated industrial PhD student.
+                PhD student for 6 months. In January 2025, I joined the <strong><Link href="https://wasp-sweden.org/" target="_blank" rel="noopener noreferrer">Wallenberg AI, Autonomous Systems and Software Program (WASP)</Link></strong>  as an affiliated industrial PhD student.
               </Typography>
 
               <Typography paragraph>
@@ -288,7 +288,16 @@ export default function About() {
                     '& .MuiTimelineItem-root:before': { flex: 0, padding: 0 }, // removes awkward left gutter
                   }}
                 >
-                  <NewsItem date="Sep 2025">
+                  <NewsItem date="Sept 2026">
+                    <strong>
+                      <Link href="https://arxiv.org/abs/2605.20942" target="_blank" rel="noopener noreferrer">
+                    "Bridging Structure and Language: Graph-Based Visual Reasoning for Autonomous Road Understanding"
+                      </Link>
+                    </strong> has been accepted at <strong>NeurIPS (main track)</strong>!
+                    
+                  </NewsItem>
+
+                  <NewsItem date="Sept 2025">
                     Joined the{' '}
                     <strong>
                       <Link href="https://stanfordasl.github.io/" target="_blank" rel="noopener noreferrer">
@@ -304,14 +313,19 @@ export default function About() {
                     following group reorganization.
                   </NewsItem>
 
-                  <NewsItem date="Jun 2025">Our paper has been accepted to <strong>ICCV 2025</strong>.</NewsItem>
+                  <NewsItem date="Jun 2025">Our paper "ArgoTweak: Towards Self-Updating HD Maps through Structured Priors" has been accepted to <strong>ICCV 2025</strong>.</NewsItem>
 
                   <NewsItem date="Jan 2025">
                     Joined <strong>WASP</strong> as an affiliated industrial PhD student.
                   </NewsItem>
 
                   <NewsItem date="Oct 2024" last>
-                    My first novel <strong>&quot;Vorbereiten auf den Zufall&quot;</strong> has been published! ✨
+                    My{' '}
+                    <strong>
+                      <Link href="https://www.raetia.com/de/zoom-ed/1025-vorbereiten-auf-den-zufall.html" target="_blank" rel="noopener noreferrer">
+                        first novel
+                      </Link>
+                    </strong>{' '}<strong>&quot;Vorbereiten auf den Zufall&quot;</strong> has been published! ✨
                   </NewsItem>
                 </Timeline>
               </Box>

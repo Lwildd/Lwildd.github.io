@@ -26,6 +26,46 @@ const actionIconSx = {
 const publications = [
 
   {
+    title: 'Bridging Structure and Language: Graph-Based Visual Reasoning for Autonomous Road Understanding',
+    venue: 'NeurIPS 2026',
+    authors: 'L. Wild, K. Luo, M. Pavone',
+    description:
+      'A graph-grounded framework that unifies explicit road structure with open-vocabulary natural language to provide verifiable, compositional reasoning supervision for vision-language models.',
+    thumbnail: '/crs.png',
+    links: {
+      arxiv: "https://arxiv.org/abs/2605.20942",
+      cite: `@misc{wild2026bridgingstructurelanguagegraphbased,
+      title={Bridging Structure and Language: Graph-Based Visual Reasoning for Autonomous Road Understanding}, 
+      author={Lena Wild and Katie Z Luo and Marco Pavone},
+      year={2026},
+      eprint={2605.20942},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2605.20942}, 
+}`
+    },
+  },
+  {
+    title: 'Do Vision-Language-Action Models Mean What They Say? On the Role of Faithfulness in Embodied Reasoning?',
+    venue: 'under review',
+    authors: 'M. Foutter, M. Cercola, L. Wild, Y. Wang, M. Li, D. Gammelli, M. Pavone',
+    description:
+      'An investigation of how faithfully the chain-of-thought reasoning in vision-language-action models reflects their actual decision-making, showing that reasoning can improve performance without truly explaining the actions taken.',
+    thumbnail: '/pinocchio.png',
+    links: {
+      arxiv: "https://arxiv.org/abs/2607.04681",
+      cite: `@misc{foutter2026visionlanguageactionmodelsmeansay,
+      title={Do Vision-Language-Action Models Mean What They Say? On the Role of Faithfulness in Embodied Reasoning}, 
+      author={Matthew Foutter and Matteo Cercola and Lena Wild and Yunshan Wang and Michelle Li and Daniele Gammelli and Marco Pavone},
+      year={2026},
+      eprint={2607.04681},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2607.04681},  
+}`
+    },
+  },
+  {
     title: 'ArgoTweak: Towards Self-Updating HD Maps through Structured Priors',
     venue: 'ICCV 2025',
     authors: 'L. Wild, R. Valencia, P. Jensfelt',

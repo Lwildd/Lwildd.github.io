@@ -6,6 +6,7 @@ import Education from './Sections/Education';
 import Publications from './Sections/Publications.js';
 import Experience from './Sections/Experience';
 import Footer from './Footer.jsx';
+// import Awards from './Sections/Awards.js';
 import { BrowserRouter } from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Publications />
         <Education />
         <Experience />
+        {/* <Awards/> */}
       <Footer/>
       </Container>
 

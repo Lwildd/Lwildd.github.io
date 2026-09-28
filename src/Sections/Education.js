@@ -7,7 +7,7 @@ const periods = [
     label: "2023 – present",
     items: [
       { logo: "/logos/kth.png", alt: "KTH", title: "PhD Computer Science", org: "KTH Royal Institute of Technology", subtitle: "since Oct, 2023" },
-      { logo: "/logos/stanford.png", alt: "Stanford", title: "Visiting PhD Student", org: "Stanford University", subtitle: "since Sep, 2025" },
+      { logo: "/logos/stanford.png", alt: "Stanford", title: "Visiting PhD Student", org: "Stanford University, Autonomous Systems Lab", subtitle: "Sep, 2025 - Feb, 2026" },
     ],
   },
   {
